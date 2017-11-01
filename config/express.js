@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 module.exports = function() {
     var app = express();
     //CONFIGURACAO DE AMBIENTE
-    app.set('port', 3000);
+    app.set('port', process.env.PORT || 3000);
     app.set('view engine', 'ejs');
     app.set('views', './app/views');
     //MIDDLEWARE
