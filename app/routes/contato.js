@@ -8,7 +8,7 @@ module.exports = function(app) {
     // app.delete('/contatos/:id', controller.removeContato);
 
     app.route('/contatos')
-        .get(controller.listaContatos)
+        .get(controller.listaTodos)
         .post(controller.salvaContato);
     
     app.route('/contatos/:id')
