@@ -34,4 +34,8 @@ angular.module('contatooh')
                     console.log(error);
                 });
         };
+
+        ContatoService.query(function(contatos){
+            $scope.contatos = contatos
+        });
     });
