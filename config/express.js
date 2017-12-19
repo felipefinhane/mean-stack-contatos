@@ -11,8 +11,8 @@ module.exports = function() {
     app.set('port', process.env.PORT || 3000);
     app.set('view engine', 'ejs');
     app.set('views', './app/views');
-    //MIDDLEWARE
     app.use(express.static('./public'));
+    //MIDDLEWARE
     app.use(bodyParser.urlencoded({extended: true}));
     app.use(bodyParser.json());
     app.use(require('method-override')());
